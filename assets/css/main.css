@@ -22,6 +22,7 @@
 :root {
     --color-default: #0a0d13;
     --color-primary: #92e3a9;
+    --color-primary-bgw: #68aa76;
     --color-secondary: #0e1d34;
     --color-tertiary: #263238;
 }
@@ -40,12 +41,14 @@ body {
 }
 
 a {
-    color: var(--color-primary);
+    /* color: var(--color-primary); */
+    color: #2048d9;
     text-decoration: none;
 }
 
 a:hover {
-    color: #406aff;
+    /* color: #406aff; */
+    color: #00c167;
     text-decoration: none;
 }
 
@@ -175,7 +178,7 @@ section {
 }
 
 .breadcrumbs nav ol a {
-    color: var(--color-primary);
+    color: var(--color-primary-bgw);
     transition: 0.3s;
 }
 
@@ -374,10 +377,23 @@ section {
         border: 1px solid var(--color-primary);
     }
 
+    .navbar .active-conclusion,
+    .navbar .active-conclusion:focus {
+        color: black;
+        background: white;
+        border: 1px solid white;
+    }
+
     .navbar .get-a-quote:hover,
     .navbar .get-a-quote:focus:hover {
         color: black;
         background: var(--color-primary);
+    }
+
+    .navbar .active-conclusion:hover,
+    .navbar .active-conclusion:focus:hover {
+        color: black;
+        background: white;
     }
 
     .navbar .dropdown ul {
@@ -581,6 +597,37 @@ section {
 /*--------------------------------------------------------------
 # Featured Services Section
 --------------------------------------------------------------*/
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+@media (max-width: 767px) {
+    .icon {
+        align-items: center;
+    }
+}
+
+.my-logo {
+    width: 70px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 70px; /* Ajusta el tamaño del logo según tus necesidades */
+    background-size: cover; /* Para escalar el logo dentro del contenedor */
+    background-repeat: no-repeat; /* Para evitar la repetición del logo */
+}
+
+.my-logo-1 {
+    background-image: url("../img/three-icon-1.svg");
+}
+
+.my-logo-2 {
+    background-image: url("../img/three-icon-2.svg");
+}
+
+.my-logo-3 {
+    background-image: url("../img/three-icon-3.svg");
+}
+
 .featured-services .service-item {
     position: relative;
     height: 100%;
@@ -601,8 +648,16 @@ section {
     background: #fff;
 }
 
-.featured-services .service-item:hover .icon i {
-    color: var(--color-primary);
+.featured-services .service-item:hover .my-logo-1 {
+    background-image: url("../img/three-icon-1-hover.svg");
+}
+
+.featured-services .service-item:hover .my-logo-2 {
+    background-image: url("../img/three-icon-2-hover.svg");
+}
+
+.featured-services .service-item:hover .my-logo-3 {
+    background-image: url("../img/three-icon-3-hover.svg");
 }
 
 .featured-services .service-item .title {
@@ -635,12 +690,19 @@ section {
 .featured-services .service-item:hover .title,
 .featured-services .service-item:hover .readmore,
 .featured-services .service-item:hover .icon i {
-    color: var(--color-primary);
+    color: var(--color-primary-bgw);
 }
 
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+/* 
+.go-to-history {
+    color: #406aff;
+}
+.go-to-history:hover {
+    color: #00c167;
+} */
 
 .borde {
     border: 2px solid red;
@@ -689,7 +751,8 @@ section {
 .about .play-btn {
     width: 94px;
     height: 94px;
-    background: radial-gradient(var(--color-primary) 50%, rgba(13, 66, 255, 0.4) 52%);
+    /* RGB(146,227,169) */
+    background: radial-gradient(var(--color-primary) 50%, rgba(146, 227, 169, 0.4) 52%);
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -710,7 +773,7 @@ section {
     animation-timing-function: steps;
     opacity: 1;
     border-radius: 50%;
-    border: 5px solid rgba(13, 66, 255, 0.7);
+    border: 5px solid rgba(146, 227, 169, 0.8);
     top: -15%;
     left: -15%;
     background: rgba(198, 16, 0, 0);
