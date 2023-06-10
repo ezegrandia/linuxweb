@@ -696,13 +696,6 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
-/* 
-.go-to-history {
-    color: #406aff;
-}
-.go-to-history:hover {
-    color: #00c167;
-} */
 
 .borde {
     border: 2px solid red;
@@ -746,6 +739,24 @@ section {
 
 .about .content p:last-child {
     margin-bottom: 0;
+}
+
+.about .parrafo {
+    margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+    .about .parrafo {
+        margin-bottom: 16px;
+    }
+}
+
+.about .parrafo:last-child {
+    margin-top: 8px;
+}
+@media (max-width: 991px) {
+    .about .parrafo:last-child {
+        margin-top: 0;
+    }
 }
 
 .about .play-btn {
@@ -1115,7 +1126,7 @@ section {
 }
 
 .faq .accordion-button:not(.collapsed) {
-    color: var(--color-primary);
+    color: var(--color-primary-bgw);
     border-bottom: 0;
     box-shadow: none;
 }
@@ -1125,7 +1136,7 @@ section {
     top: 14px;
     left: 25px;
     font-size: 20px;
-    color: var(--color-primary);
+    color: var(--color-primary-bgw);
 }
 
 .faq .accordion-button:after {
@@ -1146,10 +1157,29 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
     padding: 80px 0;
-    background: url("../img/testimonials-bg.jpg") no-repeat;
+    background: url("../img/testimonials-bg-2.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
+}
+
+.testimonial-btn {
+    margin: 30px auto;
+}
+
+.testimonials .get-a-quote,
+.testimonials .get-a-quote:focus {
+    /* background: var(--color-primary); */
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.testimonials .get-a-quote:hover,
+.testimonials .get-a-quote:focus:hover {
+    color: black;
+    background: var(--color-primary);
 }
 
 .testimonials::before {
