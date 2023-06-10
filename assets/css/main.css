@@ -61,6 +61,14 @@ h6 {
     font-family: var(--font-primary);
 }
 
+.borde {
+    border: 2px solid red;
+}
+
+.borde2 {
+    border: 2px solid blue;
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -375,6 +383,7 @@ section {
         border-radius: 4px;
         color: var(--color-primary);
         border: 1px solid var(--color-primary);
+        transition: all ease-in-out 0.3s;
     }
 
     .navbar .active-conclusion,
@@ -532,6 +541,7 @@ section {
         border-radius: 4px;
         margin: 15px;
         color: #fff;
+        transition: all ease-in-out 0.3s;
     }
 
     .navbar .get-a-quote:hover,
@@ -697,8 +707,24 @@ section {
 # About Us Section
 --------------------------------------------------------------*/
 
-.borde {
-    border: 2px solid red;
+.about {
+    padding-bottom: 50px;
+}
+
+.milestone {
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 80px;
+    background-image: url(../img/Icono\ Milestone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 16px;
+    padding: 5px;
+}
+
+.milestone-container {
+    width: 100%;
 }
 
 .about .content h3 {
@@ -837,6 +863,105 @@ section {
         transform: scale(1, 1);
         opacity: 0;
     }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+
+.why-icon {
+    background-color: #ecf9f0;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 100% 100%;
+}
+
+.why-us {
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.why-us .content {
+    padding: 30px;
+    background: var(--color-secondary);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.why-us .content h3 {
+    color: var(--color-primary);
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.why-us .content p {
+    margin-bottom: 30px;
+}
+
+.why-us .get-a-quote,
+.why-us .get-a-quote:focus {
+    /* background: var(--color-primary); */
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: all ease-in-out 0.3s;
+}
+
+.why-us .get-a-quote:hover,
+.why-us .get-a-quote:focus:hover {
+    color: black;
+    background: var(--color-primary);
+}
+
+.why-us .content .more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+    font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+    color: #5fcf80;
+    background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 20px 30px;
+    width: 100%;
+    border: 1px solid #eef0ef;
+}
+
+.why-us .icon-boxes .icon-box i {
+    font-size: 32px;
+    padding: 18px;
+    color: #5fcf80;
+    margin-bottom: 30px;
+    background: #ecf9f0;
+    border-radius: 50px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+    font-size: 15px;
+    color: #848484;
 }
 
 /*--------------------------------------------------------------
@@ -1174,6 +1299,7 @@ section {
     border-radius: 4px;
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
+    transition: all ease-in-out 0.3s;
 }
 
 .testimonials .get-a-quote:hover,
