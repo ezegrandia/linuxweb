@@ -1250,10 +1250,108 @@ section {
 }
 
 /*--------------------------------------------------------------
+# use
+--------------------------------------------------------------*/
+
+.use-section-title {
+    padding-bottom: 0;
+}
+
+.caso-2 {
+    margin-top: 60px;
+}
+
+.hardware-icon {
+    background-image: url("../img/hardware-icon.svg");
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.user-icon {
+    background-image: url("../img/user-icon.svg");
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.use .enlace-title {
+    color: black;
+}
+.use .enlace-title:hover {
+    color: var(--color-primary-bgw);
+}
+
+.use {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-title h3 span {
+    color: var(--color-primary-bgw);
+}
+
+.section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+    .section-title p {
+        width: 50%;
+    }
+}
+
+.use .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.use .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.use .content ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.use .content ul li:first-child {
+    margin-top: 35px;
+}
+
+.use .content ul h5 {
+    font-size: 18px;
+    color: #555555;
+}
+
+.use .content ul p {
+    font-size: 15px;
+}
+
+.use .content p:last-child {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+
 .features {
-    padding-top: 80px;
+    padding-top: 0;
 }
 
 .features .features-item + .features-item {
