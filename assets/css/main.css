@@ -1146,25 +1146,6 @@ section {
     transform: scale(20);
 }
 
-.video-section .cta-btn {
-    font-family: var(--font-primary);
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 48px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-}
-
-.video-section .cta-btn:hover {
-    background: var(--color-primary);
-    border: 2px solid var(--color-primary);
-}
-
 @keyframes pulsate-btn {
     0% {
         transform: scale(0.6, 0.6);
@@ -1253,8 +1234,16 @@ section {
 # use
 --------------------------------------------------------------*/
 
+.use-case-img {
+    height: 450px;
+}
+
 .use-section-title {
     padding-bottom: 0;
+}
+
+.use-case-title {
+    margin-bottom: 60px;
 }
 
 .caso-2 {
@@ -1347,166 +1336,40 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features Section
+# Super pc Section
 --------------------------------------------------------------*/
 
-.features {
-    padding-top: 0;
-}
-
-.features .features-item + .features-item {
-    margin-top: 100px;
-}
-
-@media (max-width: 640px) {
-    .features .features-item + .features-item {
-        margin-top: 40px;
-    }
-}
-
-.features .features-item h3 {
-    font-weight: 600;
-    font-size: 26px;
-    color: #001973;
-}
-
-.features .features-item ul {
-    list-style: none;
-    padding: 0;
-}
-
-.features .features-item ul li {
-    padding-bottom: 10px;
-}
-
-.features .features-item ul li:last-child {
-    padding-bottom: 0;
-}
-
-.features .features-item ul i {
-    font-size: 20px;
-    padding-right: 4px;
+.super-pc .content h3 {
     color: var(--color-primary);
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-.features .features-item p:last-child {
-    margin-bottom: 0;
+.super-pc .content {
+    padding: 50px;
+    background-color: var(--color-secondary);
+    color: white;
 }
 
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing .pricing-item {
-    padding: 60px 40px;
-    box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
-    background: #fff;
-    height: 100%;
-    border-top: 4px solid #fff;
-    border-radius: 5px;
+.super-pc .content p:last-child {
+    margin-bottom: 30px;
 }
 
-.pricing h3 {
-    font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: var(--color-secondary);
-}
-
-.pricing h4 {
-    font-size: 48px;
-    color: var(--color-primary);
-    font-weight: 400;
-    font-family: var(--font-primary);
-    margin-bottom: 25px;
-}
-
-.pricing h4 sup {
-    font-size: 28px;
-}
-
-.pricing h4 span {
-    color: rgba(108, 117, 125, 0.8);
-    font-size: 18px;
-}
-
-.pricing ul {
-    padding: 20px 0;
-    list-style: none;
-    color: #6c757d;
-    text-align: left;
-    line-height: 20px;
-}
-
-.pricing ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
-.pricing ul i {
-    color: #059652;
-    font-size: 24px;
-    padding-right: 3px;
-}
-
-.pricing ul .na {
-    color: rgba(108, 117, 125, 0.5);
-}
-
-.pricing ul .na i {
-    color: rgba(108, 117, 125, 0.5);
-}
-
-.pricing ul .na span {
-    text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-    display: inline-block;
-    padding: 12px 35px;
+.super-pc .btn-super,
+.why-us .btn-super:focus {
+    padding: 8px 20px;
     border-radius: 4px;
     color: var(--color-primary);
-    transition: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: var(--font-primary);
-    transition: 0.3s;
     border: 1px solid var(--color-primary);
+    transition: all ease-in-out 0.3s;
 }
 
-.pricing .buy-btn:hover {
+.super-pc .btn-super:hover,
+.super-pc .btn-super:focus:hover {
+    color: black;
     background: var(--color-primary);
-    color: #fff;
-}
-
-.pricing .featured {
-    border-top-color: var(--color-primary);
-}
-
-.pricing .featured .buy-btn {
-    background: var(--color-primary);
-    color: #fff;
-}
-
-@media (max-width: 992px) {
-    .pricing .box {
-        max-width: 60%;
-        margin: 0 auto 30px auto;
-    }
-}
-
-@media (max-width: 767px) {
-    .pricing .box {
-        max-width: 80%;
-        margin: 0 auto 30px auto;
-    }
-}
-
-@media (max-width: 420px) {
-    .pricing .box {
-        max-width: 100%;
-        margin: 0 auto 30px auto;
-    }
 }
 
 /*--------------------------------------------------------------
@@ -1570,6 +1433,11 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+
+.conclusion-title {
+    margin: 40px auto;
+}
+
 .testimonials {
     padding: 80px 0;
     background: url("../img/testimonials-bg-2.jpg") no-repeat;
