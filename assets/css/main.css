@@ -57,7 +57,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+img/ h6 {
     font-family: var(--font-primary);
 }
 
@@ -75,6 +75,10 @@ h6 {
 section {
     padding: 80px 0;
     overflow: hidden;
+}
+
+.title-separator {
+    margin: 40px auto;
 }
 
 .section-header {
@@ -608,6 +612,14 @@ section {
 # Featured Services Section
 --------------------------------------------------------------*/
 
+.linux-title {
+    margin: 0;
+}
+
+.featured-services {
+    padding-bottom: 0;
+}
+
 .icon {
     display: flex;
     justify-content: center;
@@ -1045,7 +1057,7 @@ section {
 --------------------------------------------------------------*/
 .video-section {
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 0;
 }
 
 .video-section .container {
@@ -1166,10 +1178,67 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Clients Section
+--------------------------------------------------------------*/
+.clients {
+    padding: 0 0 60px 0;
+}
+
+.swiper-slide {
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.distro-1 {
+    background-image: url("../img/clients/client-1.svg");
+}
+.distro-1:hover {
+    background-image: url("../img/clients/client-1-hv.svg");
+}
+
+.distro-2 {
+    background-image: url("../img/clients/client-2.svg");
+}
+.distro-2:hover {
+    background-image: url("../img/clients/client-2-hv.svg");
+}
+
+.distro-3 {
+    background-image: url("../img/clients/client-3.svg");
+}
+.distro-3:hover {
+    background-image: url("../img/clients/client-3-hv.svg");
+}
+
+.distro-4 {
+    background-image: url("../img/clients/client-4.svg");
+}
+.distro-4:hover {
+    background-image: url("../img/clients/client-4-hv.svg");
+}
+
+.distro-5 {
+    background-image: url("../img/clients/client-5.svg");
+}
+.distro-5:hover {
+    background-image: url("../img/clients/client-5-hv.svg");
+}
+
+.distro-6 {
+    background-image: url("../img/clients/client-6.svg");
+}
+.distro-6:hover {
+    background-image: url("../img/clients/client-6-hv.svg");
+}
+
+/*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/distros-bg1.jpg") center center;
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/distros-bg.jpg") center center;
     background-size: cover;
     padding: 100px 0;
 }
@@ -1178,35 +1247,6 @@ section {
     .call-to-action {
         background-attachment: fixed;
     }
-}
-
-.call-to-action h3 {
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.call-to-action p {
-    color: #fff;
-}
-
-.call-to-action .cta-btn {
-    font-family: var(--font-primary);
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 40px;
-    border-radius: 5px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
-}
-
-.call-to-action .cta-btn:hover {
-    background: var(--color-primary);
-    border: 2px solid var(--color-primary);
 }
 
 /*--------------------------------------------------------------
