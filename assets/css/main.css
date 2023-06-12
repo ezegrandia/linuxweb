@@ -943,6 +943,10 @@ section {
     width: 100%;
     border: 1px solid #eef0ef;
 }
+.why-us .icon-boxes .icon-box:hover {
+    border: 1px solid var(--color-primary);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
 .why-us .icon-boxes .icon-box i {
     font-size: 32px;
@@ -967,6 +971,10 @@ section {
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+
+.services {
+    padding-bottom: 0;
+}
 
 .services .parrafo {
     margin-bottom: 16px;
@@ -1033,10 +1041,135 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Video Section
+--------------------------------------------------------------*/
+.video-section {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.video-section .container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Stallman-video.jpg") center center;
+    background-size: cover;
+    padding: 100px 60px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-section h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.video-section p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.video-section .play-btn {
+    width: 94px;
+    height: 94px;
+    margin-bottom: 20px;
+    background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-section .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation: pulsate-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 131, 116, 0.7);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+}
+
+.video-section .play-btn:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.video-section .play-btn:hover:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    animation: none;
+    border-radius: 0;
+}
+
+.video-section .play-btn:hover:after {
+    border-left: 15px solid var(--color-primary);
+    transform: scale(20);
+}
+
+.video-section .cta-btn {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 48px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.video-section .cta-btn:hover {
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+@keyframes pulsate-btn {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+/*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/cta-bg.jpg") center center;
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/distros-bg1.jpg") center center;
     background-size: cover;
     padding: 100px 0;
 }
