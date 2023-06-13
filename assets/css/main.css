@@ -540,18 +540,19 @@ section {
 
     .navbar .get-a-quote,
     .navbar .get-a-quote:focus {
-        background: var(--color-primary);
+        /* background: var(--color-primary); */
+        border: 1px solid var(--color-primary);
         padding: 8px 20px;
         border-radius: 4px;
         margin: 15px;
-        color: #fff;
+        color: var(--color-primary);
         transition: all ease-in-out 0.3s;
     }
 
     .navbar .get-a-quote:hover,
     .navbar .get-a-quote:focus:hover {
-        color: #fff;
-        background: rgba(13, 66, 255, 0.8);
+        color: black;
+        background: var(--color-primary);
     }
 
     .navbar .dropdown ul,
@@ -561,7 +562,7 @@ section {
         padding: 10px 0;
         margin: 10px 20px;
         transition: all 0.5s ease-in-out;
-        border: 1px solid #19335c;
+        border: 1px solid var(--color-tertiary);
     }
 
     .navbar .dropdown > .dropdown-active,
@@ -1161,8 +1162,10 @@ section {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+
 .clients {
     padding: 0 0 60px 0;
+    height: auto;
 }
 
 .distros-slider {
@@ -2211,10 +2214,41 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+.footer-alumnos {
+    padding-left: 105px;
+}
+@media (max-width: 1199px) {
+    .footer-alumnos {
+        padding-left: 55px;
+    }
+}
+@media (max-width: 991px) {
+    .footer-alumnos {
+        padding-left: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-alumnos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .footer {
     font-size: 14px;
     background-color: var(--color-secondary);
     padding: 50px 0;
+    padding-bottom: 0;
     color: white;
 }
 
@@ -2239,6 +2273,10 @@ section {
 .footer .footer-info p {
     font-size: 14px;
     font-family: var(--font-primary);
+}
+
+.footer .footer-info span {
+    margin-bottom: 16px;
 }
 
 .footer .social-links a {

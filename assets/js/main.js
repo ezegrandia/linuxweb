@@ -151,15 +151,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 2,
                 spaceBetween: 40,
             },
-            480: {
-                slidesPerView: 3,
+            767: {
+                slidesPerView: 2,
                 spaceBetween: 60,
             },
-            640: {
-                slidesPerView: 4,
+            992: {
+                slidesPerView: 3,
                 spaceBetween: 80,
             },
-            992: {
+            1200: {
                 slidesPerView: 4,
                 spaceBetween: 120,
             },
