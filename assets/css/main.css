@@ -1023,7 +1023,7 @@ section {
     transition: 0.3s;
 }
 
-.services .card:hover {
+.services .card-blue:hover {
     background: var(--color-secondary);
     border: 1px solid var(--color-secondary);
 }
@@ -1053,8 +1053,12 @@ section {
     transition: 0.3;
 }
 
-.services .card:hover h3 {
+.services .card:hover .card-title {
     color: var(--color-primary);
+}
+
+.services .card:hover .card-link {
+    color: var(--color-primary-bgw);
 }
 
 .services .card p {
@@ -1065,7 +1069,7 @@ section {
     transition: 0.3s;
 }
 
-.services .card:hover p {
+.services .card:hover .parrafo-white {
     color: #fff;
 }
 
