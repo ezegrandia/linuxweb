@@ -220,6 +220,7 @@ section {
     bottom: 15px;
     z-index: 99999;
     background: var(--color-primary);
+    border: 2px solid var(--color-primary);
     width: 40px;
     height: 40px;
     border-radius: 4px;
@@ -228,13 +229,14 @@ section {
 
 .scroll-top i {
     font-size: 24px;
-    color: #fff;
+    color: #000;
     line-height: 0;
 }
 
 .scroll-top:hover {
-    background: rgba(13, 66, 255, 0.8);
-    color: #fff;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
 }
 
 .scroll-top.active {
