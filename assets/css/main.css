@@ -72,6 +72,20 @@ img/ h6 {
 .caption p {
     font-size: 14px;
     font-style: italic;
+    margin-top: 5px;
+}
+
+.caption a {
+    font-size: 14px;
+    font-style: italic;
+    /* color: rgb(10, 13, 19); */
+    color: #2048d9;
+    margin-top: 5px;
+}
+.caption a:hover {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--color-primary-bgw);
 }
 
 /*--------------------------------------------------------------
