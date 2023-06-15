@@ -1475,6 +1475,12 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 
+/* .swiper-conclusion {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+} */
+
 .conclusion-title {
     margin: 40px auto;
 }
@@ -2252,6 +2258,15 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+.bibliografia-link {
+    color: #fff;
+    /* font-style: italic; */
+}
+
+.bibliografia-link:hover {
+    color: var(--color-primary);
+}
 
 .footer-alumnos {
     padding-left: 105px;
